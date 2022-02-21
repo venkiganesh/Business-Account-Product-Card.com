@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script src="https://kit.fontawesome.com/0692c82101.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="bs_account.css">
+  <meta charset="utf-8">
+  <title>Account</title>
+</head>
+
+<body>
+  <div class="container">
+    <i id="ham" class="fas fa-arrow-alt-left"></i>
+
+    <div class="add-product">
+      <form class="add-form" action="index.html" method="post">
+        <span class="span-1">Product Name</span><br>
+        <input id="input-1" type="text" placeholder="Enter the product name"></input><br>
+        <span class="span-2">Product Details</span><br>
+        <textarea placeholder="Enter the product details" id="input-2" name="det" rows="5" cols="50"></textarea><br>
+        <span class="span-3">Price</span><br>
+        <span class="price_icon">$</span>
+        <input placeholder="Enter the amount of the product" id="input-3" type="text"></input><br>
+        <span class="span-4">Time of delivery</span><br>
+        <input id="input-4" type="datetime-local"></input><br>
+        <button class="btn-add" onclick="add_name()" type="button">Add Product</button>
+        <span class="span-5">Add image</span>
+        <input type="file" id="input-5" accept="image/png"></input>
+      </form>
+    </div>
+    <div class="product-card">
+      <div id="product-img"></div>
+      <div id="product-txt">
+        <h2 id="head-card"></h2>
+        <p id="para-card"></p>
+        <span id="price-card"></span>
+        <span id="time-span">Time of delivery</span>
+        <span id="time-card"></span>
+      </div>
+    </div>
+<button id="publish-btn"  type="button" name="button">Publish product</button>
+<span id="cover-btn-1"></span>
+
+  </div>
+  <script type="text/javascript" src="bs_account.js">
+
+  </script>
+</body>
+
+</html>
